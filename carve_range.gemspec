@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tyler Brothers"]
   spec.email         = ["tylerbrothers1@gmail.com"]
 
-  spec.summary       = "Takes two date ranges and returns a set of date ranges that do not overlap with the second date range."
-  spec.description   = "See README."
+  spec.summary       = "Takes two date ranges (A,B) and returns an array of date ranges in A that do not overlap with date range B, and returns B. See the README for more info (https://github.com/possibly/carve_range)"
+  spec.description   = "Takes two date ranges (A,B) and returns an array of date ranges in A that do not overlap with date range B, and returns B. See the README for more info (https://github.com/possibly/carve_range)"
   spec.homepage      = "https://github.com/possibly/carve_range"
   spec.license       = "MIT"
 

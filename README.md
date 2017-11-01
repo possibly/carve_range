@@ -1,6 +1,6 @@
 # CarveRange
 
-Given two date ranges (A and B), return an array of date ranges such that each new date range does not overlap with the date range B (but include date range B)
+Takes two date ranges (A,B) and returns an array of date ranges in A that do not overlap with date range B, and returns B.
 
 ## Example 1
 
