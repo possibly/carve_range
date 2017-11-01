@@ -5,33 +5,45 @@ Takes two date ranges (A,B) and returns an array of date ranges in A that do not
 ## Example 1
 
 Date Range A: #########
+
 Date Range B:   #####
+
 Carve(A,B):			 [##, ##, ####]
 
 ## Example 1 Why?
 
 Date Range A:   #########
+
 Date Range B:     #####
+
 Date Range A':  ##
+
 Date Range A'':        ##
+
 A' + A'' + B: [##, ##, ####]
 
 ## Example 2
 
 Date Range A: #####
+
 Date Range B:   #####
+
 Carve(A,B):			 [##,#####]
 
 ## Example 3
 
 Date Range A:   #####
+
 Date Range B:   ###
+
 Carve(A,B):			 [##,###]
 
 ## Example 4
 
 Date Range A:  #####
+
 Date Range B: #######
+
 Carve(A,B):	 [#######]
 
 ## Use Case
