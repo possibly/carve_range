@@ -1,6 +1,6 @@
 # CarveRange
 
-Takes two date ranges (A,B) and returns an array of date ranges in A that do not overlap with date range B, and returns B.
+Takes two date ranges (A,B) and returns an array of date ranges in A that do not overlap with date range B, and includes B.
 
 ## Example 1
 
@@ -48,9 +48,11 @@ Carve(A,B):	 [#######]
 
 ## Use Case
 
-Your tracking your activity in a calendar for a month. For days 1-30, you Went Jogging, so you create an Event that Starts At Day 1 and End At day 2. Oops! You double-check your journal and realize that Day 15-18 you said you went Jogging, but actually you Stayed Home.
+Your tracking your activity in a calendar for a month. For days 1-30, you Went Jogging, so you create an Event that Starts At Day 1 and Ends At day 30. Oops! You double-check your journal and realize that Day 15-18 you said you went Jogging, but actually you Stayed Home.
 
 You can "carve" the 1 Event (that contains a Start Date and and End Date) with this gem such that you could get 3 Events. The first event is Days 1-14 (you Went Jogging those days). The second event is Days 15-18 (you Stayed Home those days). The third event is Days 19-30 (you Went Jogging those days).
+
+This gem could take the first Event's date range (Date Range A) and another Date Range (Event you want to add to the calendar, Days 15-18, Date Range B) and return [Date Range A' (1-14), Date Range A'' (19-30), Date Range B (15-18)].
 
 ## Installation
 
